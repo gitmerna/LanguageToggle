@@ -79,6 +79,8 @@ class LANGTOGGLE_PT_panel(bpy.types.Panel):
         tr = bpy.app.translations.pgettext
 
         layout = self.layout
+        layout.label(text="You can assign a shortcut")
+        layout.label(text="from the right-click menu on the button")
         layout.operator(LANGTOGGLE_OT_toggle.bl_idname, text=tr("Toggle Language"), icon="FILE_REFRESH")
 
 
@@ -89,6 +91,8 @@ translation_dict = {
     "ja_JP": {
         ("*", "Language Toggle"): "言語切り替え機能",
         ("*", "Toggle Language"): "英語に切り替える",
+        ("*", "You can assign a shortcut"): "ボタン上で右クリックメニューから",
+        ("*", "from the right-click menu on the button"): "ショートカットを登録できます",
     },
 }
 
