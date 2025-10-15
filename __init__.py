@@ -79,9 +79,10 @@ class LANGTOGGLE_PT_panel(bpy.types.Panel):
         tr = bpy.app.translations.pgettext
 
         layout = self.layout
-        layout.label(text="You can assign a shortcut")
-        layout.label(text="from the right-click menu on the button")
-        layout.operator(LANGTOGGLE_OT_toggle.bl_idname, text=tr("Toggle Language"), icon="FILE_REFRESH")
+        col1 = layout.column(align=True)
+        col1.label(text="You can assign a shortcut")
+        col1.label(text="from the right-click menu on the button")
+        col1.operator(LANGTOGGLE_OT_toggle.bl_idname, text=tr("Toggle Language"), icon="FILE_REFRESH")
 
 
 # ----------------------------------------------------
