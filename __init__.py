@@ -83,6 +83,8 @@ class LANGTOGGLE_PT_panel(bpy.types.Panel):
         col1.label(text="You can assign a shortcut")
         col1.label(text="from the right-click menu on the button")
         col1.operator(LANGTOGGLE_OT_toggle.bl_idname, text=tr("Toggle Language"), icon="FILE_REFRESH")
+        col1.label(text="※ Please switch the language to")
+        col1.label(text="   Japanese before enabling the add-on.")
 
 
 # ----------------------------------------------------
@@ -94,6 +96,8 @@ translation_dict = {
         ("*", "Toggle Language"): "英語に切り替える",
         ("*", "You can assign a shortcut"): "ボタン上で右クリックメニューから",
         ("*", "from the right-click menu on the button"): "ショートカットを登録できます",
+        ("*", "※ Please switch the language to"): "※ 日本語に変更してから",
+        ("*", "   Japanese before enabling the add-on."): "   アドオンを有効にしてください",
     },
 }
 
